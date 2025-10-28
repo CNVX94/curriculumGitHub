@@ -1,6 +1,6 @@
         :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
+            --primary-color: #490037;
+            --secondary-color: #b74aff;
             --accent-color: #e74c3c;
         }
         
@@ -8,6 +8,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
+            background-color: rgb(209, 209, 209);
         }
         
         .profile-header {
@@ -33,7 +34,7 @@
         
         .skill-bar {
             height: 10px;
-            background-color: #e9ecef;
+            background-color: #000000;
             border-radius: 5px;
             margin-bottom: 15px;
         }
@@ -79,11 +80,10 @@
             width: 40px;
             height: 40px;
             display: inline-flex;
-            align-items: center;
             justify-content: center;
             border-radius: 50%;
             background-color: var(--secondary-color);
-            color: white;
+            color: rgb(0, 0, 0);
             margin-right: 10px;
         }
         
