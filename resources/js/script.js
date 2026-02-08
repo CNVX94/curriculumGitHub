@@ -1,10 +1,53 @@
 // Array of certificate images in the certificados folder
 const certificateImages = [
     './resources/files/certificados/UC-GitHub.jpg',
+    './resources/files/certificados/UCScrum.jpg',
     // Add more certificate images here
     // './resources/files/certificados/certificate2.jpg',
     // './resources/files/certificados/certificate3.jpg',
 ];
+
+// Theme Toggle Functionality
+(function() {
+    const htmlElement = document.documentElement;
+    
+    // Check for saved theme preference or default to light
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    htmlElement.setAttribute('data-theme', savedTheme);
+    
+    // Update icon when DOM is ready
+    document.addEventListener('DOMContentLoaded', function() {
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        
+        // Set initial icon
+        updateIcon(savedTheme);
+        
+        // Toggle theme on button click
+        if (themeToggle) {
+            themeToggle.addEventListener('click', function() {
+                const currentTheme = htmlElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                
+                htmlElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateIcon(newTheme);
+            });
+        }
+        
+        function updateIcon(theme) {
+            if (themeIcon) {
+                if (theme === 'dark') {
+                    themeIcon.classList.remove('bi-moon-fill');
+                    themeIcon.classList.add('bi-sun-fill');
+                } else {
+                    themeIcon.classList.remove('bi-sun-fill');
+                    themeIcon.classList.add('bi-moon-fill');
+                }
+            }
+        }
+    });
+})();
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {

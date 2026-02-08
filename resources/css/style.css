@@ -1,15 +1,42 @@
-        :root {
-            --primary-color: #490037;
-            --secondary-color: #b74aff;
-            --accent-color: #e74c3c;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: rgb(209, 209, 209);
-        }
+:root {
+    /* Light Theme (default) */
+    --primary-color: #490037;
+    --secondary-color: #b74aff;
+    --accent-color: #e74c3c;
+    --bg-color: rgb(209, 209, 209);
+    --text-color: #333;
+    --card-bg: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --navbar-bg: #343a40;
+    --input-bg: #ffffff;
+    --input-border: #ced4da;
+    --carousel-control-bg: rgba(73, 0, 55, 0.5);
+    --carousel-control-hover: rgba(73, 0, 55, 0.8);
+}
+
+[data-theme="dark"] {
+    /* Dark Theme */
+    --primary-color: #ca2525ba;
+    --secondary-color: #d04323;
+    --accent-color: #ff6b6b;
+    --bg-color: #1a1a2e;
+    --text-color: #e0e0e0;
+    --card-bg: #16213e;
+    --card-shadow: rgba(0, 0, 0, 0.3);
+    --navbar-bg: #0f0f1a;
+    --input-bg: #2a2a4a;
+    --input-border: #444;
+    --carousel-control-bg: rgba(208, 67, 35, 0.5);
+    --carousel-control-hover: rgba(208, 67, 35, 0.8);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
         
         .profile-header {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -92,14 +119,80 @@
         }
         
         .card {
-            transition: transform 0.3s;
-            border: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-        }
+    transition: transform 0.3s, background-color 0.3s;
+    border: none;
+    box-shadow: 0 4px 6px var(--card-shadow);
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Dark mode specific overrides */
+[data-theme="dark"] .navbar {
+    background-color: var(--navbar-bg) !important;
+}
+
+[data-theme="dark"] .card-subtitle,
+[data-theme="dark"] .text-muted {
+    color: #a0a0a0 !important;
+}
+
+[data-theme="dark"] .form-control {
+    background-color: var(--input-bg);
+    border-color: var(--input-border);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .form-control:focus {
+    background-color: var(--input-bg);
+    border-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .form-label {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #1a1a2e;
+}
+
+[data-theme="dark"] .btn-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
         
         .contact-info-item {
             word-break: break-word;
@@ -137,4 +230,17 @@
         footer {
             background-color: var(--primary-color);
             color: white;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            background-color: var(--carousel-control-bg);
+            width: 5%;
+            opacity: 1;
+            transition: background-color 0.3s ease;
+        }
+
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background-color: var(--carousel-control-hover);
         }
