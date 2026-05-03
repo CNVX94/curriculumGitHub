@@ -3,12 +3,6 @@
 :root {
     --bg-deep: #000a1a;
     --bg-mid: #001233;
-    --wave-1: rgba(0, 80, 220, 0.18);
-    --wave-2: rgba(0, 140, 255, 0.14);
-    --wave-3: rgba(60, 0, 180, 0.12);
-    --wave-4: rgba(0, 200, 255, 0.10);
-    --wave-5: rgba(100, 0, 200, 0.08);
-    --wave-6: rgba(0, 60, 180, 0.15);
     --glass-bg: rgba(8, 30, 68, 0.55);
     --glass-border: rgba(80, 160, 255, 0.18);
     --glass-highlight: rgba(120, 200, 255, 0.08);
@@ -38,12 +32,6 @@
 [data-theme="light"] {
     --bg-deep: #c8ddf5;
     --bg-mid: #dce8fb;
-    --wave-1: rgba(0, 80, 220, 0.12);
-    --wave-2: rgba(0, 140, 255, 0.09);
-    --wave-3: rgba(60, 0, 180, 0.07);
-    --wave-4: rgba(0, 200, 255, 0.06);
-    --wave-5: rgba(100, 0, 200, 0.05);
-    --wave-6: rgba(0, 60, 180, 0.10);
     --glass-bg: rgba(255, 255, 255, 0.6);
     --glass-border: rgba(80, 130, 220, 0.3);
     --glass-highlight: rgba(255, 255, 255, 0.5);
@@ -102,86 +90,15 @@ body {
     overflow: hidden;
 }
 
-.wave {
+#pspBg {
     position: absolute;
-    border-radius: 43%;
-    will-change: transform;
-}
-
-.w1 {
-    width: 320%;
-    height: 320%;
-    top: -140%;
-    left: -110%;
-    background: radial-gradient(ellipse at center, var(--wave-1), transparent 65%);
-    animation: waveD1 28s ease-in-out infinite alternate;
-}
-
-.w2 {
-    width: 280%;
-    height: 280%;
-    top: -100%;
-    left: -90%;
-    background: radial-gradient(ellipse at center, var(--wave-2), transparent 60%);
-    animation: waveD2 22s ease-in-out infinite alternate;
-}
-
-.w3 {
-    width: 360%;
-    height: 300%;
-    top: -80%;
-    left: -130%;
-    background: radial-gradient(ellipse at center, var(--wave-3), transparent 55%);
-    animation: waveD3 30s ease-in-out infinite alternate;
-}
-
-.w4 {
-    width: 250%;
-    height: 250%;
-    top: -60%;
-    left: -70%;
-    background: radial-gradient(ellipse at center, var(--wave-4), transparent 50%);
-    animation: waveD1 18s ease-in-out infinite alternate-reverse;
-}
-
-.w5 {
-    width: 300%;
-    height: 200%;
-    top: 0%;
-    left: -100%;
-    background: radial-gradient(ellipse at 30% 50%, var(--wave-5), transparent 60%);
-    animation: waveD2 35s ease-in-out infinite alternate;
-    border-radius: 45%;
-}
-
-.w6 {
-    width: 200%;
-    height: 200%;
-    top: -20%;
-    left: -50%;
-    background: radial-gradient(ellipse at center, var(--wave-6), transparent 55%);
-    animation: waveD3 24s ease-in-out infinite alternate-reverse;
-    border-radius: 47%;
-}
-
-@keyframes waveD1 {
-    0% { transform: translate(0, 0) rotate(0deg) scale(1); }
-    33% { transform: translate(3%, 4%) rotate(4deg) scale(1.03); }
-    66% { transform: translate(-2%, 6%) rotate(-2deg) scale(1.06); }
-    100% { transform: translate(4%, -2%) rotate(6deg) scale(1.02); }
-}
-
-@keyframes waveD2 {
-    0% { transform: translate(0, 0) rotate(0deg) scale(1); }
-    33% { transform: translate(-4%, 3%) rotate(-3deg) scale(1.04); }
-    66% { transform: translate(5%, -4%) rotate(5deg) scale(1.01); }
-    100% { transform: translate(-3%, 2%) rotate(-1deg) scale(1.05); }
-}
-
-@keyframes waveD3 {
-    0% { transform: translate(2%, -1%) rotate(1deg) scale(1.02); }
-    50% { transform: translate(-5%, 5%) rotate(-4deg) scale(1.07); }
-    100% { transform: translate(3%, -3%) rotate(3deg) scale(1); }
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(18px);
+    -webkit-filter: blur(18px);
+    opacity: 0.85;
 }
 
 .shimmer-overlay {
@@ -1086,7 +1003,7 @@ body {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
-    .wave {
+    #pspBg {
         display: none;
     }
     .shimmer-overlay {
