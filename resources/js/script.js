@@ -8,7 +8,7 @@ const PSPWaves = (() => {
     let time = 0;
     let currentTheme = 'dark';
 
-    const DPR = Math.min(window.devicePixelRatio || 1, 2);
+    const DPR = Math.min(window.devicePixelRatio || 1, 1.5);
 
     const THEMES = {
         dark: {
@@ -219,8 +219,19 @@ const PSPWaves = (() => {
 
     initRibbons();
     resize();
+
+    let resizeTimer = null;
     window.addEventListener('resize', () => {
-        resize();
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(resize, 150);
+    });
+
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            stop();
+        } else {
+            start();
+        }
     });
 
     const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
