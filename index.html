@@ -1,401 +1,358 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV de Michael Rodríguez Reséndiz en GitHub</title>
-    <!-- Favicon -->
+    <title>CV — Michael Rodríguez Reséndiz</title>
     <link rel="icon" type="image/png" href="./resources/images/icon/cheems2.png?v=2">
     <link rel="shortcut icon" type="image/png" href="./resources/images/icon/cheems2.png?v=2">
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;800&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    
+    <link rel="stylesheet" href="./resources/css/style.css">
 </head>
 <body>
-    <!-- Header con información personal -->
-    <header class="profile-header">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-3 text-center">
-                    <img src="./resources/images/profilecv.jpeg" alt="Foto de perfil" class="profile-pic">
-                </div>
-                <div class="col-md-9">
-                    <h1 class="display-4">Michael Rodríguez Reséndiz</h1>
+    <div class="waves-bg" aria-hidden="true">
+        <div class="wave w1"></div>
+        <div class="wave w2"></div>
+        <div class="wave w3"></div>
+        <div class="wave w4"></div>
+        <div class="wave w5"></div>
+        <div class="wave w6"></div>
+    </div>
+    <div class="shimmer-overlay" aria-hidden="true"></div>
 
-                    <p> Busco nuevas oportunidades laborales en el ámbito del desarrollo web, con un enfoque en la creación de aplicaciones accesibles y centradas en el usuario.</p>
-                    <p> </p>
-                    <div class="mt-3">
-                        <a href="#contacto" class="btn btn-light me-2"><i class="bi bi-envelope"></i> Contacto</a>
-                        <a href="./resources/files/Curriculum_2026-2.pdf" class="btn btn-outline-light"><i class="bi bi-download"></i> Descargar CV</a>
-                    </div>
-                </div>
+    <div class="xmb" id="xmb">
+        <header class="xmb-header">
+            <div class="xmb-brand">MRR</div>
+            <div class="xmb-clock" id="xmbClock"></div>
+        </header>
+
+        <nav class="xmb-categories" id="xmbCategories">
+            <div class="xmb-cat active" data-index="0" data-id="profile" tabindex="0">
+                <i class="bi bi-person-fill"></i>
+                <span>Perfil</span>
             </div>
-        </div>
-    </header>
-
-    <!-- Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experiencia">Experiencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#educacion">Educación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#habilidades">Habilidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#proyectos">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#certificados">Certificados y Constancias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-
-                </ul>
+            <div class="xmb-cat" data-index="1" data-id="experience" tabindex="0">
+                <i class="bi bi-briefcase-fill"></i>
+                <span>Experiencia</span>
             </div>
-        </div>
-    </nav>
-
-    <!-- Contenido principal -->
-    <main class="container my-5">
-        <!-- Sobre Mí -->
-        <section id="sobre-mi" class="mb-5">
-            <h2 class="section-title">Sobre Mí</h2>
-            <div class="row">
-                <div class="col-md-8">
-
-                    <br>
-                    <br>
-                    <ul>
-                        <li>Joven profesional con experiencia en desarrollo web y un fuerte interés en la inteligencia artificial.</li>
-                        <li>Conocimientos en HTML, CSS, JavaScript y frameworks como Laravel y .NET.</li>
-                        <li>Capacidad para trabajar en equipo y adaptarse a diferentes entornos de trabajo.</li>
-                        <li>Interés en aprender nuevas tecnologías y mejorar continuamente mis habilidades.</li>
-                        <li>Proactivo en la búsqueda de soluciones y la superación de desafíos.</li>
-                    </ul>
-                    </div>
-                <div class="col-md-4">
-                    <div class="card p-3">
-                        <h5>Información Personal</h5>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><i class="bi bi-geo-alt-fill text-primary"></i>Cuautitlán Izcalli, Infonavit Centro, Av. De Las Flores, 6, 201, México.</li>
-                            <li class="mb-2"><i class="bi bi-telephone-fill text-primary"></i> +52 55 5679 8355</li>
-                            <li class="mb-2"><i class="bi bi-envelope-fill text-primary"></i> michaelrodriguez9104@gmail.com</li>
-                            <li class="mb-2"><i class="bi bi-linkedin text-primary"></i> www.linkedin.com/in/michael-rodriguez-resendiz-1069a7317</li>
-                            <li class="mb-2"><i class="bi bi-github text-primary"></i> github.com/cnvx94</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="xmb-cat" data-index="2" data-id="education" tabindex="0">
+                <i class="bi bi-mortarboard-fill"></i>
+                <span>Educación</span>
             </div>
-        </section>
-
-        <!-- Experiencia Laboral -->
-        <section id="experiencia" class="mb-5">
-            <h2 class="section-title">Experiencia Laboral</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h4>Becario en Desarrollo Web</h4>
-                    <h5>Omnisys</h5>
-                    <p class="text-muted">Marzo 2023 - Agosto 2023</p>
-                    <p>Documentación de procesos y desarrollo de funcionalidades en aplicaciones web.</p>
-                    <ul>
-                        <li>Aprendizaje de nuevas tecnologías y herramientas de desarrollo.</li>
-                        <li>Colaboración en equipo para cumplir con los objetivos del proyecto.</li>
-                        <li>Uso de Docker para la creación y gestión de contenedores.</li>
-                        
-
-                    </ul>
-                </div>
-     
-                <!-- Añade más experiencias según sea necesario -->
+            <div class="xmb-cat" data-index="3" data-id="skills" tabindex="0">
+                <i class="bi bi-lightning-charge-fill"></i>
+                <span>Habilidades</span>
             </div>
-        </section>
-
-        <!-- Educación -->
-        <section id="educacion" class="mb-5">
-            <h2 class="section-title">Educación</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Licenciatura en Informática</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">UNAM, FESC4</h6>
-                            <p class="card-text">2022 - Actualidad</p>
-                            <p class="card-text">Estudiante de la Licenciatura en Informática, con enfoque en desarrollo web y aplicaciones móviles.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Técnico en Programación</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">CECyCTEM Cuautitlán Izcalli</h6>
-                            <p class="card-text">2018 - 2021</p>
-                            <p class="card-text">Enfoque en desarrollo de software, bases de datos y programación orientada a objetos.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Añade más tarjetas de educación según sea necesario -->
+            <div class="xmb-cat" data-index="4" data-id="projects" tabindex="0">
+                <i class="bi bi-code-slash"></i>
+                <span>Proyectos</span>
             </div>
-        </section>
-
-        <!-- Habilidades -->
-        <section id="habilidades" class="mb-5" >
-            <h2 class="section-title">Habilidades</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Habilidades Técnicas</h5>
-                    <div class="skill-item mb-3">
-                        <div class="d-flex justify-content-between">
-                            <span> </span>
-                            <span></span>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="skill-item mb-3">
-                        <div class="d-flex justify-content-between">
-                            <span>Lenguajes de programación</span>
-                            <span>HTML, CSS, JavaScript, C#, PHP</span>
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="skill-item mb-3">
-                        <div class="d-flex justify-content-between">
-                            <span>Frameworks y Librerías</span>
-                            <span>Laravel, .NET, Bootstrap</span>
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="skill-item mb-3">
-                        <div class="d-flex justify-content-between">
-                            <span>Bases de Datos</span>
-                            <span>MySQL, SQL Server</span>
-                            <span></span>
-                        </div>
-                    </div>
-                
-                    <div class="skill-item mb-3">
-                        <div class="d-flex justify-content-between">
-                            <span>Control de Versiones</span>
-                            <span>Git, GitHub</span>
-                            <span></span>
-                        </div>
-                    </div>
-
-                    <div class="skill-item mb-3">
-                        <div class="d-flex justify-content-between">
-                            <span>Herramientas de Desarrollo</span>
-                            <span>Visual Studio, VS Code, Postman</span>
-                            <span></span>
-                        </div>
-                    </div>
-
-                    
-
-                    <!-- Añade más habilidades técnicas -->
-                </div>
-                <div class="col-md-6">
-                    <h5>Habilidades Blandas</h5>
-                    <ul>
-                        <li>Comunicación efectiva</li>
-                        <li>Trabajo en equipo</li>
-                        <li>Resolución de problemas</li>
-                        <li>Gestión del tiempo</li>
-                        <li>Adaptabilidad</li>
-                    </ul>
-                    <h5 class="mt-4">Idiomas</h5>
-                    <ul>
-                        <li>Español: Nativo</li>
-                        <li>Inglés: Intermedio (B2)</li>
-                        <li>Francés: Básico (A1)</li>
-                        <li>Japonés: Básico (A1)</li>
-                    </ul>
-                </div>
+            <div class="xmb-cat" data-index="5" data-id="certificates" tabindex="0">
+                <i class="bi bi-patch-check-fill"></i>
+                <span>Certificados</span>
             </div>
-        </section>
-
-        <!-- Certificados-->
-
-        <section id ="certificados" class="mb-5">
-            <h2 class="section-title">Certificados y Constancias</h2>
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <!-- Carousel items will be dynamically added here -->
-                </div>
-                <!-- Carousel controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
+            <div class="xmb-cat" data-index="6" data-id="contact" tabindex="0">
+                <i class="bi bi-envelope-fill"></i>
+                <span>Contacto</span>
             </div>
-        </section>
+        </nav>
 
-        <!-- Proyectos -->
-        <section id="proyectos" class="mb-5">
-            <h2 class="section-title">Proyectos Destacados</h2>
-            <div class="row">
-                <!--div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">Chatbot Matemático</h5>
-                            <p class="card-text">Utilizando python, streamlit y un modelo llm local, agregamos contexto a las preguntas matemáticas, fortaleciendo respuestas en maquinas de bajos recursos sin necesidad de hacer "finetunning".</p>
-                            <a href="https://github.com/CNVX94/IASTREAMLIT" class="btn btn-primary">Ver más</a>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="resources/images/projects/PetCare.png" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">PetCare</h5>
-                            <p class="card-text">Desarrollo de una plataforma web para la gestión de clínicas veterinarias, utilizando Laravel.</p>
-                            <a href="https://github.com/CNVX94/petCare" class="btn btn-primary">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="resources/images/projects/ChatbotPHP.jpeg" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">Chatbot PHP</h5>
-                            <p class="card-text">Este proyecto implementa un widget de chat simple y ligero para sitios web.</p>
-                            <a href="https://github.com/CNVX94/ChatbotCongreso" class="btn btn-primary">Ver más</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="xmb-selector" id="xmbSelector"></div>
 
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="resources/images/NexlabDesignWeb.jpeg" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">Nexlab</h5>
-                            <p class="card-text">Proyecto para empresa de venta de impresiones 3D</p>
-                            <a href="https://nexlab3dservice.rf.gd/" class="btn btn-primary">Ver más</a>
+        <main class="xmb-content" id="xmbContent">
+            <!-- PROFILE -->
+            <section class="xmb-panel active" data-category="profile" id="panel-profile">
+                <div class="xmb-panel-inner">
+                    <div class="profile-hero">
+                        <div class="profile-avatar">
+                            <img src="./resources/images/profilecv.jpeg" alt="Michael Rodríguez Reséndiz">
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">CRUD C#</h5>
-                            <p class="card-text">Formulario sencillo de gestión de datos en C#</p>
-                            <a href="https://github.com/CNVX94/CRUDCORE" class="btn btn-primary">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Contacto -->
-        <section id="contacto" class="mb-5">
-            <h2 class="section-title">Contacto</h2>
-            <div class="row">
-                <div class="col-md-8">
-                    <form action="https://formspree.io/f/xeopanrb" method="POST">
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <label for="nombre" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
+                        <div class="profile-info">
+                            <h1 class="profile-name">Michael Rodríguez Reséndiz</h1>
+                            <p class="profile-tagline">Desarrollador Web & Entusiasta IA</p>
+                            <p class="profile-bio">Busco nuevas oportunidades laborales en el ámbito del desarrollo web, con un enfoque en la creación de aplicaciones accesibles y centradas en el usuario.</p>
+                            <div class="profile-actions">
+                                <a href="#panel-contact" class="xmb-btn" data-nav="contact"><i class="bi bi-envelope"></i> Contacto</a>
+                                <a href="./resources/files/Curriculum_2026-2.pdf" class="xmb-btn xmb-btn-outline" download><i class="bi bi-download"></i> Descargar CV</a>
                             </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="asunto" class="form-label">Asunto</label>
-                            <input type="text" class="form-control" id="asunto" name="asunto" required>
+                    </div>
+                    <div class="profile-details">
+                        <div class="glass-card">
+                            <h3><i class="bi bi-person-badge"></i> Información Personal</h3>
+                            <ul class="info-list">
+                                <li><i class="bi bi-geo-alt-fill"></i> Cuautitlán Izcalli, México</li>
+                                <li><i class="bi bi-telephone-fill"></i> +52 55 5679 8355</li>
+                                <li><i class="bi bi-envelope-fill"></i> michaelrodriguez9104@gmail.com</li>
+                                <li><i class="bi bi-linkedin"></i> linkedin.com/in/michael-rodriguez-resendiz-1069a7317</li>
+                                <li><i class="bi bi-github"></i> github.com/cnvx94</li>
+                            </ul>
                         </div>
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-                    </form>
-
+                    </div>
                 </div>
+            </section>
 
-                
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title mb-4">Información de Contacto</h5>
-                            <div class="d-flex align-items-start mb-4">
-                                <div class="contact-icon">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                </div>
-                                <div class="contact-info-item flex-grow-1">
-                                    <h6 class="mb-1 fw-bold">Ubicación</h6>
-                                    <p class="mb-0 text-muted small">Cuautitlán Izcalli, Infonavit Centro, Av. De Las Flores, 6, 201, México.</p>
+            <!-- EXPERIENCE -->
+            <section class="xmb-panel" data-category="experience" id="panel-experience">
+                <div class="xmb-panel-inner">
+                    <div class="xmb-item" data-item="0">
+                        <div class="glass-card">
+                            <div class="item-header">
+                                <div class="item-icon"><i class="bi bi-briefcase-fill"></i></div>
+                                <div>
+                                    <h3>Becario en Desarrollo Web</h3>
+                                    <p class="item-subtitle">Omnisys — Marzo 2023 - Agosto 2023</p>
                                 </div>
                             </div>
-                            <div class="d-flex align-items-start mb-4">
-                                <div class="contact-icon">
-                                    <i class="bi bi-envelope-fill"></i>
-                                </div>
-                                <div class="contact-info-item flex-grow-1">
-                                    <h6 class="mb-1 fw-bold">Email</h6>
-                                    <a href="mailto:michaelrodriguez9104@gmail.com" class="text-decoration-none d-block">michaelrodriguez9104@gmail.com</a>
+                            <p>Documentación de procesos y desarrollo de funcionalidades en aplicaciones web.</p>
+                            <ul class="item-list">
+                                <li>Aprendizaje de nuevas tecnologías y herramientas de desarrollo.</li>
+                                <li>Colaboración en equipo para cumplir con los objetivos del proyecto.</li>
+                                <li>Uso de Docker para la creación y gestión de contenedores.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EDUCATION -->
+            <section class="xmb-panel" data-category="education" id="panel-education">
+                <div class="xmb-panel-inner">
+                    <div class="xmb-item" data-item="0">
+                        <div class="glass-card">
+                            <div class="item-header">
+                                <div class="item-icon"><i class="bi bi-mortarboard-fill"></i></div>
+                                <div>
+                                    <h3>Licenciatura en Informática</h3>
+                                    <p class="item-subtitle">UNAM, FESC4 — 2022 - Actualidad</p>
                                 </div>
                             </div>
-                            <div class="d-flex align-items-start mb-3">
-                                <div class="contact-icon">
-                                    <i class="bi bi-telephone-fill"></i>
+                            <p>Estudiante de la Licenciatura en Informática, con enfoque en desarrollo web y aplicaciones móviles.</p>
+                        </div>
+                    </div>
+                    <div class="xmb-item" data-item="1">
+                        <div class="glass-card">
+                            <div class="item-header">
+                                <div class="item-icon"><i class="bi bi-mortarboard-fill"></i></div>
+                                <div>
+                                    <h3>Técnico en Programación</h3>
+                                    <p class="item-subtitle">CECyCTEM Cuautitlán Izcalli — 2018 - 2021</p>
                                 </div>
-                                <div class="contact-info-item flex-grow-1">
-                                    <h6 class="mb-1 fw-bold">Teléfono</h6>
-                                    <a href="tel:+5255667983555" class="text-decoration-none d-block">+52 55 6679 8355</a>
+                            </div>
+                            <p>Enfoque en desarrollo de software, bases de datos y programación orientada a objetos.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SKILLS -->
+            <section class="xmb-panel" data-category="skills" id="panel-skills">
+                <div class="xmb-panel-inner">
+                    <div class="xmb-item" data-item="0">
+                        <div class="glass-card">
+                            <h3><i class="bi bi-cpu"></i> Habilidades Técnicas</h3>
+                            <div class="skills-grid">
+                                <div class="skill-tag"><i class="bi bi-code-slash"></i> HTML, CSS, JavaScript, C#, PHP</div>
+                                <div class="skill-tag"><i class="bi bi-stack"></i> Laravel, .NET, Bootstrap</div>
+                                <div class="skill-tag"><i class="bi bi-database"></i> MySQL, SQL Server</div>
+                                <div class="skill-tag"><i class="bi bi-git"></i> Git, GitHub</div>
+                                <div class="skill-tag"><i class="bi bi-tools"></i> VS Code, Visual Studio, Postman, Docker</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xmb-item" data-item="1">
+                        <div class="glass-card">
+                            <h3><i class="bi bi-people-fill"></i> Habilidades Blandas</h3>
+                            <div class="skills-grid">
+                                <div class="skill-tag">Comunicación efectiva</div>
+                                <div class="skill-tag">Trabajo en equipo</div>
+                                <div class="skill-tag">Resolución de problemas</div>
+                                <div class="skill-tag">Gestión del tiempo</div>
+                                <div class="skill-tag">Adaptabilidad</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xmb-item" data-item="2">
+                        <div class="glass-card">
+                            <h3><i class="bi bi-translate"></i> Idiomas</h3>
+                            <div class="lang-grid">
+                                <div class="lang-item">
+                                    <span class="lang-name">Español</span>
+                                    <span class="lang-level">Nativo</span>
+                                    <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+                                </div>
+                                <div class="lang-item">
+                                    <span class="lang-name">Inglés</span>
+                                    <span class="lang-level">B2</span>
+                                    <div class="lang-bar"><div class="lang-fill" style="width:70%"></div></div>
+                                </div>
+                                <div class="lang-item">
+                                    <span class="lang-name">Francés</span>
+                                    <span class="lang-level">A1</span>
+                                    <div class="lang-bar"><div class="lang-fill" style="width:15%"></div></div>
+                                </div>
+                                <div class="lang-item">
+                                    <span class="lang-name">Japonés</span>
+                                    <span class="lang-level">A1</span>
+                                    <div class="lang-bar"><div class="lang-fill" style="width:15%"></div></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
 
-    <!-- Footer -->
-    <footer class="py-4 text-center">
-        <div class="container">
-            <p class="mb-0">© 2025 Michael Rodríguez Reséndiz. Todos los derechos reservados.</p>
-            <div class="mt-2">
-                <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
-                <a href="#" class="text-white me-3"><i class="bi bi-github"></i></a>
-                <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
-            </div>
-        </div>
-    </footer>
+            <!-- PROJECTS -->
+            <section class="xmb-panel" data-category="projects" id="panel-projects">
+                <div class="xmb-panel-inner">
+                    <div class="xmb-item" data-item="0">
+                        <div class="glass-card project-card">
+                            <img src="resources/images/projects/PetCare.png" alt="PetCare" class="project-img">
+                            <div class="project-body">
+                                <h3>PetCare</h3>
+                                <p>Plataforma web para la gestión de clínicas veterinarias, desarrollada con Laravel.</p>
+                                <a href="https://github.com/CNVX94/petCare" class="xmb-btn" target="_blank"><i class="bi bi-github"></i> Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xmb-item" data-item="1">
+                        <div class="glass-card project-card">
+                            <img src="resources/images/projects/ChatbotPHP.jpeg" alt="Chatbot PHP" class="project-img">
+                            <div class="project-body">
+                                <h3>Chatbot PHP</h3>
+                                <p>Widget de chat simple y ligero para sitios web.</p>
+                                <a href="https://github.com/CNVX94/ChatbotCongreso" class="xmb-btn" target="_blank"><i class="bi bi-github"></i> Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xmb-item" data-item="2">
+                        <div class="glass-card project-card">
+                            <img src="resources/images/NexlabDesignWeb.jpeg" alt="Nexlab" class="project-img">
+                            <div class="project-body">
+                                <h3>Nexlab</h3>
+                                <p>Proyecto para empresa de venta de impresiones 3D.</p>
+                                <a href="https://nexlab3dservice.rf.gd/" class="xmb-btn" target="_blank"><i class="bi bi-globe"></i> Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xmb-item" data-item="3">
+                        <div class="glass-card project-card">
+                            <div class="project-img project-img-placeholder"><i class="bi bi-code-square"></i></div>
+                            <div class="project-body">
+                                <h3>CRUD C#</h3>
+                                <p>Formulario sencillo de gestión de datos en C#.</p>
+                                <a href="https://github.com/CNVX94/CRUDCORE" class="xmb-btn" target="_blank"><i class="bi bi-github"></i> Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <!-- Theme Toggle Button -->
-    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar modo oscuro/claro">
+            <!-- CERTIFICATES -->
+            <section class="xmb-panel" data-category="certificates" id="panel-certificates">
+                <div class="xmb-panel-inner">
+                    <div class="xmb-item" data-item="0">
+                        <div class="glass-card">
+                            <h3><i class="bi bi-patch-check-fill"></i> Certificados y Constancias</h3>
+                            <div class="carousel-wrapper" id="certCarousel">
+                                <button class="carousel-btn carousel-prev" id="certPrev" aria-label="Anterior"><i class="bi bi-chevron-left"></i></button>
+                                <div class="carousel-viewport">
+                                    <div class="carousel-track" id="certTrack">
+                                        <div class="carousel-slide active">
+                                            <img src="./resources/files/certificados/UC-GitHub.jpg" alt="Certificado GitHub">
+                                        </div>
+                                        <div class="carousel-slide">
+                                            <img src="./resources/files/certificados/UCScrum.jpg" alt="Certificado Scrum">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-btn carousel-next" id="certNext" aria-label="Siguiente"><i class="bi bi-chevron-right"></i></button>
+                            </div>
+                            <div class="carousel-dots" id="certDots">
+                                <button class="dot active" data-slide="0"></button>
+                                <button class="dot" data-slide="1"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section class="xmb-panel" data-category="contact" id="panel-contact">
+                <div class="xmb-panel-inner">
+                    <div class="xmb-item" data-item="0">
+                        <div class="glass-card">
+                            <h3><i class="bi bi-envelope-fill"></i> Envía un Mensaje</h3>
+                            <form action="https://formspree.io/f/xeopanrb" method="POST" class="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" id="nombre" name="nombre" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="asunto">Asunto</label>
+                                    <input type="text" id="asunto" name="asunto" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mensaje">Mensaje</label>
+                                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="xmb-btn xmb-btn-submit"><i class="bi bi-send-fill"></i> Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="xmb-item" data-item="1">
+                        <div class="glass-card">
+                            <h3><i class="bi bi-geo-alt-fill"></i> Información de Contacto</h3>
+                            <ul class="contact-list">
+                                <li>
+                                    <div class="contact-icon-sm"><i class="bi bi-geo-alt-fill"></i></div>
+                                    <div><strong>Ubicación</strong><br>Cuautitlán Izcalli, Infonavit Centro, México</div>
+                                </li>
+                                <li>
+                                    <div class="contact-icon-sm"><i class="bi bi-envelope-fill"></i></div>
+                                    <div><strong>Email</strong><br><a href="mailto:michaelrodriguez9104@gmail.com">michaelrodriguez9104@gmail.com</a></div>
+                                </li>
+                                <li>
+                                    <div class="contact-icon-sm"><i class="bi bi-telephone-fill"></i></div>
+                                    <div><strong>Teléfono</strong><br><a href="tel:+525556798355">+52 55 5679 8355</a></div>
+                                </li>
+                                <li>
+                                    <div class="contact-icon-sm"><i class="bi bi-linkedin"></i></div>
+                                    <div><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/michael-rodriguez-resendiz-1069a7317" target="_blank">Michael Rodríguez Reséndiz</a></div>
+                                </li>
+                                <li>
+                                    <div class="contact-icon-sm"><i class="bi bi-github"></i></div>
+                                    <div><strong>GitHub</strong><br><a href="https://github.com/cnvx94" target="_blank">cnvx94</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="xmb-footer">
+            <span>&copy; 2025 Michael Rodríguez Reséndiz</span>
+            <span class="xmb-hint"><i class="bi bi-arrow-left-right"></i> Categorías &nbsp; <i class="bi bi-arrow-up-down"></i> Items &nbsp; <kbd>Enter</kbd> Seleccionar</span>
+        </footer>
+    </div>
+
+    <button class="xmb-fab theme-toggle" id="themeToggle" aria-label="Cambiar tema">
         <i class="bi bi-moon-fill" id="themeIcon"></i>
+    </button>
+    <button class="xmb-fab sound-toggle" id="soundToggle" aria-label="Sonido">
+        <i class="bi bi-volume-up-fill" id="soundIcon"></i>
     </button>
 
     <script src="./resources/js/script.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
